@@ -12,9 +12,8 @@ Web Primer: HTML, CSS and Javascript
 
 ---
 
-###### HTML is the structure behind almost all web pages, and the latest version, along with CSS and Javascript allows us to present almost anything.
-
-###### The World Wide Web Consortium (W3C) guides development and since 1993 there have been 5 major versions.
+* HTML is the structure behind almost all web pages, and the latest version, along with CSS and Javascript allows us to present almost anything.
+* The World Wide Web Consortium (W3C) guides development and since 1993 there have been 5 major versions.
 
 ---
 ### HTML: Basic Structure
