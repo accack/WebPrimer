@@ -1,5 +1,5 @@
-WebPrimer
-HTML, CSS and Javascript
+![HTML, CSS and Javascript](images/HTML-CSS-JS.png)
+Web Primer: HTML, CSS and Javascript
 ---
 ## Introduction to HTML
 
@@ -14,6 +14,7 @@ HTML, CSS and Javascript
 ####### HTML is the structure behind almost all web pages, and the latest version, along with CSS and Javascript allows us to present almost anything.
 
 ####### The World Wide Web Consortium (W3C) guides development and since 1993 there have been 5 major versions.
+
 ---
 ### HTML: Basic Structure
 
@@ -50,6 +51,7 @@ Using the Atom application on your Mac, try creating an HTML page to display som
 * Use your cheatsheet, w3schools or another resource to look up the tags you'll need.
 * Save your creation as a filename.html file and then try opening it in a browser.
 
+![Ex1 screenshot](images/Ex1-screenshot.png)
 
 * Display your name
 * A bulleted list of your A-level subjects
