@@ -1,4 +1,5 @@
 ![HTML, CSS and Javascript](images/HTML-CSS-JS.png)
+
 Web Primer: HTML, CSS and Javascript
 ---
 ## Introduction to HTML
@@ -11,9 +12,9 @@ Web Primer: HTML, CSS and Javascript
 
 ---
 
-####### HTML is the structure behind almost all web pages, and the latest version, along with CSS and Javascript allows us to present almost anything.
+###### HTML is the structure behind almost all web pages, and the latest version, along with CSS and Javascript allows us to present almost anything.
 
-####### The World Wide Web Consortium (W3C) guides development and since 1993 there have been 5 major versions.
+###### The World Wide Web Consortium (W3C) guides development and since 1993 there have been 5 major versions.
 
 ---
 ### HTML: Basic Structure
@@ -31,28 +32,29 @@ Web Primer: HTML, CSS and Javascript
 @[1,8](Tells browser that the content uses HTML)
 @[2,4,5,7](Has a head and a body)
 @[3](Title tag determines what shows in the browser tab)
-@[3,4,7,8](Almost every tag most have a corresponding closing tag. Exceptions look like this `<tag/>`.)
+@[3,4,7,8](Note that almost every tag most have a corresponding closing tag. <br/>Exceptions look like this `<tag/>`.)
 ---
 ### HTML: Basic Tags & w3schools
+
 ```html
 <body>
   <div id="MyFirstDiv">
   <h1>My Section Heading</h1>
-    <p>This is paragraph text with a link to <a href="http://w3schools.org" target="_blank">W3Schools</a> which<br/>is a really useful resource.</p>
+    <p>This is paragraph text with a link to 
+    <a href="http://w3schools.org" target="_blank">W3Schools</a> 
+    which<br/>is a really useful resource.</p>
   </div>
 </body>
 ```
-@[2,5]('div's (and 'span's) are the building blocks of most pages)
-@[3-4](Display some text! A heading followed by a paragraph with a link and a line break.)
+@[2,7]('div's (and 'span's) are the building blocks of most pages)
+@[3-6](Display some text! A heading followed by a paragraph with a link and a line break.)
 ---
 ### HTML: Exercize One
 
-Using the Atom application on your Mac, try creating an HTML page to display something that looks a little like the image below. 
+Use an editor on your Mac to try to create an HTML page to display something that looks a little like the image below. 
 * Use your cheatsheet, w3schools or another resource to look up the tags you'll need.
 * Save your creation as a filename.html file and then try opening it in a browser.
 
 ![Ex1 screenshot](images/Ex1-screenshot.png)
 
-* Display your name
-* A bulleted list of your A-level subjects
-* A link to your
+---
