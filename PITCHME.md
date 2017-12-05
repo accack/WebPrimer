@@ -13,6 +13,7 @@ Web Primer: HTML, CSS and Javascript
 ---
 
 * HTML is the structure behind almost all web pages, and the latest version, along with CSS and Javascript allows us to present almost anything.
+* HTML "tags" form the page "source", and are not displayed to the user, but they are instrumental in structuing what the user does see. 
 * The World Wide Web Consortium (W3C) guides development and since 1993 there have been 5 major versions.
 
 ---
@@ -45,7 +46,7 @@ Web Primer: HTML, CSS and Javascript
   </div>
 </body>
 ```
-@[2,7]('div's (and 'span's) are the building blocks of most pages)
+@[2,7](`div`s (and `span`s) are the building blocks of most pages)
 @[3-6](Display some text! A heading followed by a paragraph with a link and a line break.)
 ---
 ### HTML: Exercize One
