@@ -5,9 +5,9 @@ HTML, CSS and Javascript
 
 ### HTML - HyperText Markup Language
 
-* HyperText = Text with links
-* Markup = Method of formatting
-* Language = Collection of words and structures
+* *HyperText* = Text with links
+* *Markup* = Method of formatting
+* *Language* = Collection of words and structures
 
 HTML is the structure behind almost all web pages, and the latest version, along with CSS and Javascript allows us to present almost anything.
 
@@ -26,6 +26,6 @@ HTML: Basic Structure
 </html>
 ```
 @[1,8](Tells browser that the content uses HTML)
-@[2,5,6,8](Has a head and a body)
+@[2,4,5,8](Has a head and a body)
 @[3](Title tag determines what shows in the browser tab)
 ---
