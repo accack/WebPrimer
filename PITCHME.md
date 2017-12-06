@@ -42,7 +42,7 @@ Web Primer: HTML, CSS and Javascript
   <h1>My Section Heading</h1>
     <p>This is paragraph text with a link to 
     <a href="http://w3schools.org" target="_blank">W3Schools</a> 
-    which<br/>is a really useful resource.</p>
+    which<br/>is a useful resource.</p>
   </div>
 </body>
 ```
@@ -68,6 +68,9 @@ Stretch goals: Add an image, and add a red border around it.
 ### HTML: The `<Style>` Tag
 +++
 ### HTML: Style attributes and the Box Model
+
+https://www.w3schools.com/html/html_styles.asp
+
 +++
 ### HTML: Classes & Style Sheet (Inline)
 ---
