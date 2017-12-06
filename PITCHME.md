@@ -22,7 +22,7 @@ Web Primer: HTML, CSS and Javascript
 ```html
 <html>
   <head>
-    <title>My First Website</title>
+    <title>Webpage Title</title>
   </head>
   <body>
 
@@ -33,12 +33,12 @@ Web Primer: HTML, CSS and Javascript
 @[2,4,5,7](Has a head and a body)
 @[3](Title tag determines what shows in the browser tab)
 @[3,4,7,8](Note that almost every tag most have a corresponding closing tag. <br/>Exceptions look like this `<tag/>`.)
----
-### HTML: Basic Tags & w3schools
++++
+#### HTML: Basic Tags & w3schools
 
 ```html
 <body>
-  <div id="MyFirstDiv">
+  <div id="ADivContainer">
   <h1>My Section Heading</h1>
     <p>This is paragraph text with a link to 
     <a href="http://w3schools.org" target="_blank">W3Schools</a> 
@@ -48,8 +48,8 @@ Web Primer: HTML, CSS and Javascript
 ```
 @[2,7](`div`s (and `span`s) are the building blocks of most pages)
 @[3-6](Display some text! A heading followed by a paragraph with a link and a line break.)
----
-### HTML: Exercize One
++++
+#### HTML: Exercize One
 
 Use an editor on your Mac to try to create an HTML page to display something that looks a little like the image below. 
 * Use your cheatsheet, w3schools or another resource to look up the tags you'll need.
@@ -57,4 +57,30 @@ Use an editor on your Mac to try to create an HTML page to display something tha
 
 ![Ex1 screenshot](images/Ex1-screenshot.png)
 
+Stretch goals: Add an image, and add a red border around it.
 ---
+### HTML: Styling
+
+#### Use of HTML formatting tags
+
+`<p>This text demonstrated the use of <b>bold</b>, <i>italic</i> and <u>underlined</u> text.</p>`
++++
+### HTML: The `<Style>` Tag
++++
+### HTML: Style attributes and the Box Model
++++
+### HTML: Classes & Style Sheet (Inline)
+---
+### HTML: Using Other Files
++++
+### HTML: DevTools
++++
+### HTML: Exercize Two
+
+Open the page you created previously and make some changes using DevTools only
+---
+### CSS Files
+---
+### HTML: Exercize Three
+
+Format the bullet points on your page using an external css.
