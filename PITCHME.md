@@ -2,18 +2,19 @@
 
 Web Primer: HTML, CSS and Javascript
 ---
-## Introduction to HTML
+## Introduction to HTML (Structure)
 
-### HTML - HyperText Markup Language
+HyperText Markup Language:
 
 * *HyperText* = Text with links
 * *Markup* = Method of formatting
 * *Language* = Collection of words and structures
 
-The World Wide Web Consortium (W3C) guides development and since 1993 there have been 5 major versions. 
+Governance: World Wide Web Consortium (W3C). 
+Age: 1993. Current version: 5.1. 
 
 ---
-### HTML: Basic Structure
+## HTML: Basic Structure
 
 ```html
 <!DOCTYPE html>
@@ -26,13 +27,13 @@ The World Wide Web Consortium (W3C) guides development and since 1993 there have
   </body>
 </html>
 ```
-@[1-9](HTML "tags" form the "page source". Not displayed to user. With CSS and JS allow us to present almost anything.)
+@[1-9](HTML "tags" form the "page source". Invisible to user, but with CSS and JS allow us to present almost anything.)
 @[1,2,9](HTML Tag tells browser that the content uses HTML)
 @[3,5,6,8](Has a head and a body)
 @[4](Title tag determines what shows in the browser tab)
-@[5,5,8,9](Note that almost every tag most have a corresponding closing tag. <br/>Exceptions look like this `<tag/>`.)
+@[4,5,8,9](Note that almost every tag most have a corresponding closing tag. <br/>Exceptions look like this `<tag/>`.)
 +++
-#### HTML: Basic Tags & w3schools
+## HTML: Basic Tags & w3schools
 
 ```html
 <body>
@@ -48,7 +49,7 @@ The World Wide Web Consortium (W3C) guides development and since 1993 there have
 @[3-6](Display some text! A heading followed by a paragraph with a link and a line break.)
 @[5](See also Mozilla Developer Network, StackOverflow.)
 +++
-#### HTML: Exercize One
+### HTML: Exercize One
 
 Use an editor to try to create an HTML page to display something that looks a little like the image below. 
 * Use w3schools or another resource to look up the tags you'll need.
@@ -58,34 +59,30 @@ Use an editor to try to create an HTML page to display something that looks a li
 
 Stretch goals: Add a link, and/or add an image, and put a red border around it.
 +++
-#### HTML: Exercize One - FollowUp
+### HTML: Exercize One - FollowUp
 
 Great resources exist for trying this things out without the need for a local editor. These include:
 
 * [CodePen](https://codepen.io) and [JSFiddle](https://jsfiddle.net/)
 * [W3 Schools - "Try It Yourself"](https://www.w3schools.com)
 
-Experiment!
+**Experiment!**
 ---
-### HTML: Styling
+## Introduction to CSS: Presentation
 +++
-#### In the beginning...
+## In the beginning...
 
 ...we used basic HTML tags for formatting:
-
 ```
-<p>
-This text demonstrates the use of 
+<p>This text demonstrates the use of 
 <b>bold</b> (or is that <strong>strong</strong>?), 
 <i>italic</i> (<em>em</em>?), and 
 <big>big <u>underlined</u></big> text.
 </p>
 ```
-(See the result at [this CodePen](https://codepen.io/accack/pen/RjmzOJ)).
-
-Most of these tags are now depreciated, but they demonstrate how early styling was done in html. Better ways were developed...
+(See the result at [this CodePen](https://codepen.io/accack/pen/RjmzOJ)). Most of these tags are now depreciated, but they demonstrate how early styling was done in html. Better ways were developed...
 +++
-### HTML: The `<Style>` Tag
+## HTML: The `<Style>` Tag
 
 `<h1 style="color:blue;">This is a Blue Heading</h1>`
 
