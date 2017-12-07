@@ -75,7 +75,10 @@ Experiment!
 
 ```
 <p>
-This text demonstrates the use of <b>bold</b> (or is that <strong>strong</strong>?), <i>italic</i> (<em>em</em>?), and <big>big <u>underlined</u></big> text.
+This text demonstrates the use of 
+<b>bold</b> (or is that <strong>strong</strong>?), 
+<i>italic</i> (<em>em</em>?), and 
+<big>big <u>underlined</u></big> text.
 </p>
 ```
 (See the result at [this CodePen](https://codepen.io/accack/pen/RjmzOJ)).
@@ -123,23 +126,19 @@ https://www.w3schools.com/html/html_styles.asp
 <head>
   <style>
   li {  font-family: Arial, Helvetica, sans-serif; 
-        font-size: 20px; 
-        font-style: normal; 
-        color: blue }
+        font-size: 20px; color: blue;
+        font-style: normal; }
   .nameStyling {  font-family: Times New Roman, serif; 
-                  font-size: 18pt; 
-                  color: #0000FF; }
+        font-size: 18pt; color: #0000FF; }
   #thirdItemName {  color: red; }
   </style>
 </head>
 <body>
 <ol>
-  <li>First list item</li>
-  <li>Second list item, with a <span class="nameStyling">Name</span></li>
-  <li>Third list item, with a <span class="nameStyling" id="thirdItemName">
+  <li>1st list item, with a <span class="nameStyling">Name</span></li>
+  <li>2nd list item, with a <span class="nameStyling" id="thirdItemName">
   Unique Name</span></li>
-</ol>
-</body>
+</ol>...
 ```
 @[3-6,15-17](Defining style by tag)
 @[7-9,16-17](Defining style by class)
