@@ -10,11 +10,7 @@ Web Primer: HTML, CSS and Javascript
 * *Markup* = Method of formatting
 * *Language* = Collection of words and structures
 
----
-
-* HTML is the structure behind almost all web pages, and the latest version, along with CSS and Javascript allows us to present almost anything.
-* HTML "tags" form the page "source", and are not displayed to the user, but they are instrumental in structuing what the user does see. 
-* The World Wide Web Consortium (W3C) guides development and since 1993 there have been 5 major versions.
+The World Wide Web Consortium (W3C) guides development and since 1993 there have been 5 major versions. 
 
 ---
 ### HTML: Basic Structure
@@ -29,7 +25,8 @@ Web Primer: HTML, CSS and Javascript
   </body>
 </html>
 ```
-@[1,8](Tells browser that the content uses HTML)
+@[1-8](HTML "tags" form the "page source". Not displayed to user. With CSS and JS allow us to present almost anything.)
+@[1,8](HTML Tag tells browser that the content uses HTML)
 @[2,4,5,7](Has a head and a body)
 @[3](Title tag determines what shows in the browser tab)
 @[3,4,7,8](Note that almost every tag most have a corresponding closing tag. <br/>Exceptions look like this `<tag/>`.)
@@ -48,6 +45,7 @@ Web Primer: HTML, CSS and Javascript
 ```
 @[2,7](`div`s (and `span`s) are the building blocks of most pages)
 @[3-6](Display some text! A heading followed by a paragraph with a link and a line break.)
+@[5](See also Mozilla Developer Network, StackOverflow.)
 +++
 #### HTML: Exercize One
 
