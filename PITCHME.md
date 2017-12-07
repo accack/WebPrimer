@@ -1,7 +1,9 @@
-![HTML, CSS and Javascript](images/HTML-CSS-JS.png)
+![HTML, CSS and Javascript](images/HTML-CSS-JS.jpg)
 
 Web Primer: HTML, CSS and Javascript
 ---
+![HTML](images/HTML.jpg)
+
 ## Introduction to HTML (Structure)
 
 HyperText Markup Language:
@@ -69,6 +71,7 @@ Great resources exist for trying this things out without the need for a local ed
 
 **Experiment!**
 ---
+![CSS](images/CSS.jpg)
 ## Introduction to CSS: Presentation
 +++
 ## In the beginning...
@@ -76,67 +79,54 @@ Great resources exist for trying this things out without the need for a local ed
 ...we used basic HTML tags for formatting:
 ```
 <p>This text demonstrates the use of 
-<b>bold</b> (or is that <strong>strong</strong>?), 
-<i>italic</i> (<em>em</em>?), and 
+<b>bold</b> (correct "semantic html" is <strong>strong</strong>?), 
+<i>italic</i> (<em>em</em>), and 
 <big>big <u>underlined</u></big> text.
 </p>
 ```
-(See the result at [this CodePen](https://codepen.io/accack/pen/RjmzOJ)). Most of these tags are now depreciated, but they demonstrate how early styling was done in html. Better ways were developed...
+(See the result at [this CodePen](https://codepen.io/accack/pen/RjmzOJ)). These tags demonstrate how early styling was done in html. Better ways were developed...
 +++
-## HTML: The `<Style>` Tag
+## The HTML `<Style>` Tag
 
 `<h1 style="color:blue;">This is a Blue Heading</h1>`
 
 Style attributes can set almost anything - background, border, font, margins, transparency, etc.
 
-But what if we want every ... to have the same style? Do we want to have to manually add it to each one? Is there a better way?
+But what if we want every occurance of an element to have the same style? Add it to each one? Is there a better way?
 +++
-### HTML: Style Sheets
+## Style Sheets
 ```
-<!DOCTYPE html>
-<html>
 <head>
-<style>
-body {background-color: powderblue;}
-h1   {color: blue;}
-p    {color: red;}
-</style>
+  <style>
+    body {background-color: powderblue;}
+    h1   {color: blue;}
+    p    {color: red;}
+  </style>
 </head>
 <body>
-
 <h1>This is a heading</h1>
 <p>This is a paragraph.</p>
-
 </body>
-</html>
 ```
 @[1-16](Discuss...)
 @[4-9](A basic (inline) stylesheet)
 @[1-16](What's this going to look like? (Answer [here](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_internal)))
 +++
-### HTML: Style attributes and the Box Model
-
-https://www.w3schools.com/html/html_styles.asp
-
-+++
 ### HTML: Classes and Identifiers
 ```
-<head>
-  <style>
+<style>
   li {  font-family: Arial, Helvetica, sans-serif; 
         font-size: 20px; color: blue;
         font-style: normal; }
   .nameStyling {  font-family: Times New Roman, serif; 
         font-size: 18pt; color: #0000FF; }
-  #thirdItemName {  color: red; }
-  </style>
-</head>
-<body>
+  #secondItemName {  color: red; }
+</style>...
 <ol>
   <li>1st list item, with a <span class="nameStyling">Name</span></li>
-  <li>2nd list item, with a <span class="nameStyling" id="thirdItemName">
+  <li>2nd list item, with a <span class="nameStyling" id="secondItemName">
   Unique Name</span></li>
-</ol>...
+</ol>
 ```
 @[3-6,15-17](Defining style by tag)
 @[7-9,16-17](Defining style by class)
@@ -145,7 +135,7 @@ https://www.w3schools.com/html/html_styles.asp
 
 See result at [this CodePen](https://codepen.io/accack/pen/wPLwaz?editors=1000#)
 ---
-### HTML: Using Other Files
+## HTML: Using Other Files
 What if we want to share styles between pages, or even sites? Or if we just want to break things up to make them more manageable?
 ```
 <head>
@@ -153,16 +143,43 @@ What if we want to share styles between pages, or even sites? Or if we just want
 </head>
 ```
 styles.css:
+```
+li { font-size: 20px; color: blue; }
+.nameStyling { font-family: Times New Roman, serif; }
+#secondItemName { color: red; }
+```
++++
+## Exercize
 
+Format the bullet points on your page using an external css file.
+---
+HTML & CSS - Useful tools & Concepts
+## #1: An Introduction to Chrome DevTools (Elements & DOM)
+
+Right click on any page and choose "Inspect".
+The Elements tab provides lots of great HTML & CSS stuff.
 +++
-### HTML: DevTools
+## 
 +++
-### HTML: Exercize Two
+## Exercize
 
 Open the page you created previously and make some changes using DevTools only
 ---
+HTML & CSS - Useful tools & Concepts
+## #2: An Introduction to Chrome DevTools (Console & JQuery)
+
 ### CSS Files
 ---
++++
+### HTML: Style attributes and the Box Model
+
+https://www.w3schools.com/html/html_styles.asp
+
++++
+## HTML: An Introduction to Chrome DevTools
 ### HTML: Exercize Three
 
 Format the bullet points on your page using an external css.
+---
+
+![JS](images/JS.jpg)
