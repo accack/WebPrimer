@@ -16,6 +16,7 @@ The World Wide Web Consortium (W3C) guides development and since 1993 there have
 ### HTML: Basic Structure
 
 ```html
+<!DOCTYPE html>
 <html>
   <head>
     <title>Webpage Title</title>
@@ -25,11 +26,11 @@ The World Wide Web Consortium (W3C) guides development and since 1993 there have
   </body>
 </html>
 ```
-@[1-8](HTML "tags" form the "page source". Not displayed to user. With CSS and JS allow us to present almost anything.)
-@[1,8](HTML Tag tells browser that the content uses HTML)
-@[2,4,5,7](Has a head and a body)
-@[3](Title tag determines what shows in the browser tab)
-@[3,4,7,8](Note that almost every tag most have a corresponding closing tag. <br/>Exceptions look like this `<tag/>`.)
+@[1-9](HTML "tags" form the "page source". Not displayed to user. With CSS and JS allow us to present almost anything.)
+@[1,2,9](HTML Tag tells browser that the content uses HTML)
+@[3,5,6,8](Has a head and a body)
+@[4](Title tag determines what shows in the browser tab)
+@[5,5,8,9](Note that almost every tag most have a corresponding closing tag. <br/>Exceptions look like this `<tag/>`.)
 +++
 #### HTML: Basic Tags & w3schools
 
@@ -49,30 +50,113 @@ The World Wide Web Consortium (W3C) guides development and since 1993 there have
 +++
 #### HTML: Exercize One
 
-Use an editor on your Mac to try to create an HTML page to display something that looks a little like the image below. 
-* Use your cheatsheet, w3schools or another resource to look up the tags you'll need.
+Use an editor to try to create an HTML page to display something that looks a little like the image below. 
+* Use w3schools or another resource to look up the tags you'll need.
 * Save your creation as a filename.html file and then try opening it in a browser.
 
 ![Ex1 screenshot](images/Ex1-screenshot.png)
 
-Stretch goals: Add an image, and add a red border around it.
+Stretch goals: Add a link, and/or add an image, and put a red border around it.
++++
+#### HTML: Exercize One - FollowUp
+
+Great resources exist for trying this things out without the need for a local editor. These include:
+
+* [CodePen](https://codepen.io) and [JSFiddle](https://jsfiddle.net/)
+* [W3 Schools - "Try It Yourself"](https://www.w3schools.com)
+
+Experiment!
 ---
 ### HTML: Styling
++++
+#### In the beginning...
 
-#### Use of HTML formatting tags
+...we used basic HTML tags for formatting:
 
-`<p>This text demonstrated the use of <b>bold</b>, <i>italic</i> and <u>underlined</u> text.</p>`
+```
+<p>
+This text demonstrates the use of <b>bold</b> (or is that <strong>strong</strong>?), <i>italic</i> (<em>em</em>?), and <big>big <u>underlined</u></big> text.
+</p>
+```
+(See the result at [this CodePen](https://codepen.io/accack/pen/RjmzOJ)).
+
+Most of these tags are now depreciated, but they demonstrate how early styling was done in html. Better ways were developed...
 +++
 ### HTML: The `<Style>` Tag
+
+`<h1 style="color:blue;">This is a Blue Heading</h1>`
+
+Style attributes can set almost anything - background, border, font, margins, transparency, etc.
+
+But what if we want every ... to have the same style? Do we want to have to manually add it to each one? Is there a better way?
++++
+### HTML: Style Sheets
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color: powderblue;}
+h1   {color: blue;}
+p    {color: red;}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+```
+@[1-16](Discuss...)
+@[4-9](A basic (inline) stylesheet)
+@[1-16](What's this going to look like? (Answer [here](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_internal)))
 +++
 ### HTML: Style attributes and the Box Model
 
 https://www.w3schools.com/html/html_styles.asp
 
 +++
-### HTML: Classes & Style Sheet (Inline)
+### HTML: Classes and Identifiers
+```
+<head>
+  <style>
+  li {  font-family: Arial, Helvetica, sans-serif; 
+        font-size: 20px; 
+        font-style: normal; 
+        color: blue }
+  .nameStyling {  font-family: Times New Roman, serif; 
+                  font-size: 18pt; 
+                  color: #0000FF; }
+  #thirdItemName {  color: red; }
+  </style>
+</head>
+<body>
+<ol>
+  <li>First list item</li>
+  <li>Second list item, with a <span class="nameStyling">Name</span></li>
+  <li>Third list item, with a <span class="nameStyling" id="thirdItemName">
+  Unique Name</span></li>
+</ol>
+</body>
+```
+@[3-6,15-17](Defining style by tag)
+@[7-9,16-17](Defining style by class)
+@[10,17](Defining style by id. Note combined class and id use)
+@[3-10](Note different ways of defining font, size and color)
+
+See result at [this CodePen](https://codepen.io/accack/pen/wPLwaz?editors=1000#)
 ---
 ### HTML: Using Other Files
+What if we want to share styles between pages, or even sites? Or if we just want to break things up to make them more manageable?
+```
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+```
+styles.css:
+
 +++
 ### HTML: DevTools
 +++
