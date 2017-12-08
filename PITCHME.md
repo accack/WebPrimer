@@ -17,6 +17,7 @@ Governance: World Wide Web Consortium (W3C).
 Age: 1993. Current version: 5.1. 
 
 +++
+
 ## HTML: Basic Structure
 
 ```html
@@ -35,7 +36,9 @@ Age: 1993. Current version: 5.1.
 @[3,5,6,8](Has a head and a body)
 @[4](Title tag determines what shows in the browser tab)
 @[5,8,9](Note that almost every tag must have a corresponding closing tag. <br/>Exceptions look like this `<tag/>`.)
+
 +++
+
 ## HTML: Basic Tags & w3schools
 
 ```html
