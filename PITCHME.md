@@ -151,22 +151,43 @@ li { font-size: 20px; color: blue; }
 +++
 ## Exercize
 
-Format the bullet points on your page using an external css file.
+* Format the bullet points on your page using an external css file.
+
 ---
+
 HTML & CSS - Useful tools & Concepts
 ## #1: An Introduction to Chrome DevTools (Elements & DOM)
 
 Right click on any page and choose "Inspect".
 The Elements tab provides lots of great HTML & CSS stuff.
 +++
-## 
+## The Document Object Model (DOM)
+![DOM Image](images/html-dom-example.gif)
+
 +++
+
 ## Exercize
 
-Open the page you created previously and make some changes using DevTools only
+* Open the page you created previously and use DevTools to explore the DOM and classes.
+* Make some changes using DevTools only (e.g. change page background, bullet point text or formatting).
+* Refresh the page. What happens?
+
 ---
+
 HTML & CSS - Useful tools & Concepts
 ## #2: An Introduction to Chrome DevTools (Console & JQuery)
+
+The Console tab/window in DevTool:
+
+1. Displays details of any problems when loading the page
+2. allows you to query the page (and run commands against it), using something called "JQuery".
+
++++
+## Exercise
+
+* With your page loaded, open the DevTools Console, and type in `$('head')`.
+* Experiment with other elements on the page.
+---
 
 ### CSS Files
 ---
@@ -176,10 +197,7 @@ HTML & CSS - Useful tools & Concepts
 https://www.w3schools.com/html/html_styles.asp
 
 +++
-## HTML: An Introduction to Chrome DevTools
-### HTML: Exercize Three
 
-Format the bullet points on your page using an external css.
 ---
 
 ![JS](images/JS.jpg)
