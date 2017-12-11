@@ -109,7 +109,8 @@ Great resources exist for trying things out without the need for a local editor.
 ### The HTML `<Style>` Attribute
 
 ```html
-<h1 style="color:blue; text-decoration: blink;>This is a Blue Heading</h1>`
+<h1 style="color:blue; text-decoration: blink;>
+This is a Blue Heading</h1>`
 ```
 
 Style attributes can set almost anything - background, border, font, margins, transparency, etc.
@@ -149,7 +150,7 @@ But what if we want every occurance of an element to have the same style? Add it
   .nameStyling {  font-family: Times New Roman, serif; 
         font-size: 18pt; color: #0000FF; }
   #secondItemName {  color: red; }
-</style>...
+</style><!--...-->
 <ol>
   <li>1st list item, with a <span class="nameStyling">Name</span></li>
   <li>2nd list item, with a 
@@ -172,6 +173,7 @@ What if we want to share styles between pages, or even sites? Or if we just want
   <link rel="stylesheet" href="styles.css">
 </head>
 ```
+
 Code above references a seperate file, styles.css:
 ```css
 li { font-size: 20px; color: blue; }
