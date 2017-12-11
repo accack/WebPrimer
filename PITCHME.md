@@ -57,7 +57,7 @@ Age: 1993. Current version: 5.1.
 ```
 @[2,7](`div`s (and `span`s) are the building blocks of most pages)
 @[3-6](Display some text! A heading followed by a paragraph with a link and a line break.)
-@[2,5](Note the use of **"attributes"** - `id`, href` and `target`)
+@[2,5](Note the use of **"attributes"** - `id`, `href` and `target`)
 @[5](See also Mozilla Developer Network, StackOverflow.)
 
 +++
@@ -93,7 +93,7 @@ Great resources exist for trying things out without the need for a local editor.
 ### In the beginning...
 
 ...we used basic HTML tags for formatting:
-```
+```html
 <p>This text demonstrates the use of 
 <b>bold</b> (correct "semantic html" is <strong>strong</strong>), 
 <i>italic</i> (<em>em</em>), and 
@@ -102,13 +102,13 @@ Great resources exist for trying things out without the need for a local editor.
 ```
 @[2]("Semantic HTML" - tags with meaning)
 
-(See the result at [this CodePen](https://codepen.io/accack/pen/RjmzOJ)). These tags demonstrate basic styling using html. There are better ways...
+(See the result at [this CodePen](https://codepen.io/accack/pen/RjmzOJ)). There are better ways than simple HTML tags for styling...
 
 +++
 
 ### The HTML `<Style>` Attribute
 
-```
+```html
 <h1 style="color:blue; text-decoration: blink;>This is a Blue Heading</h1>`
 ```
 
@@ -120,7 +120,7 @@ But what if we want every occurance of an element to have the same style? Add it
 
 ### Style Sheets
 
-```
+```html
 <head>
   <style>
     body {background-color: powderblue;}
@@ -141,7 +141,7 @@ But what if we want every occurance of an element to have the same style? Add it
 
 ### Classes and Identifiers
 
-```
+```html
 <style>
   li {  font-family: Arial, Helvetica, sans-serif; 
         font-size: 20px; color: blue;
@@ -167,13 +167,13 @@ But what if we want every occurance of an element to have the same style? Add it
 ### Linking to other files
 
 What if we want to share styles between pages, or even sites? Or if we just want to break things up to make them more manageable?
-```
+```html
 <head>
   <link rel="stylesheet" href="styles.css">
 </head>
 ```
 Code above references a seperate file, styles.css:
-```
+```css
 li { font-size: 20px; color: blue; }
 .nameStyling { font-family: Times New Roman, serif; }
 #secondItemName { color: red; }
@@ -245,7 +245,7 @@ Any more than Ham is the same as Hamburger.
 
 ### A simple example
 
-```
+```html
 <html><body>
 
 <h2>My First JavaScript</h2>
@@ -261,12 +261,18 @@ Click me to display Date and Time.</button>
 @[1-11](Discuss)
 @[5-7](Button, with text 'Click me to display Date and Time.')
 @[6](`onclick` handler to run a piece of JS when button is clicked)
-@[6](Finds item with ID 'demo' in the DOM, and sets its 'innerHTML' to today's date.
+@[6](Finds item with ID 'demo' in the DOM, and sets its 'innerHTML' to today's date.)
 @[1-11](Click [here](https://www.w3schools.com/js/tryit.asp?filename=tryjs_myfirst) to try this.)
 
 +++
 
-That's it for now!
+### That's the introduction!
+
+Note that, as with CSS, you can import JS in files by adding a tag as follows:
+```html
+<script src="https://address.com/location/script.js"></script>
+```
+Over to Martin, for more on JavaScript...
 
 ---
 
