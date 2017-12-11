@@ -57,7 +57,7 @@ Age: 1993. Current version: 5.1.
 ```
 @[2,7](`div`s (and `span`s) are the building blocks of most pages)
 @[3-6](Display some text! A heading followed by a paragraph with a link and a line break.)
-@[5](Note the *"attributes"* here - `href` and `target`)
+@[2,5](Note the use of **"attributes"** - `id`, href` and `target`)
 @[5](See also Mozilla Developer Network, StackOverflow.)
 
 +++
@@ -66,7 +66,7 @@ Age: 1993. Current version: 5.1.
 
 Use an editor to try to create an HTML page to display something that looks a little like the image below. 
 * Use w3schools or another resource to look up the tags you'll need.
-* Save your creation as a <filename>.html file and then try opening it in a browser.
+* Save your creation as a *filename*.html file and then try opening it in a browser.
 
 ![Ex1 screenshot](images/Ex1-screenshot.png)
 
@@ -76,7 +76,7 @@ Stretch goals: Add a link, and/or add an image, and put a red border around it.
 
 ### HTML: Exercize 1 - FollowUp
 
-Great resources exist for trying this things out without the need for a local editor. These include:
+Great resources exist for trying things out without the need for a local editor. These include:
 
 * [CodePen](https://codepen.io) and [JSFiddle](https://jsfiddle.net/)
 * [W3 Schools - "Try It Yourself"](https://www.w3schools.com)
@@ -100,15 +100,17 @@ Great resources exist for trying this things out without the need for a local ed
 <big>big <u>underlined</u></big> text.
 </p>
 ```
-@(2)["Semantic HTML" - tags with meaning]
+@[2]("Semantic HTML" - tags with meaning)
 
-(See the result at [this CodePen](https://codepen.io/accack/pen/RjmzOJ)). These tags demonstrate redementary styling using html. There are better ways...
+(See the result at [this CodePen](https://codepen.io/accack/pen/RjmzOJ)). These tags demonstrate basic styling using html. There are better ways...
 
 +++
 
-### The HTML `<Style>` Tag
+### The HTML `<Style>` Attribute
 
-`<h1 style="color:blue;">This is a Blue Heading</h1>`
+```
+<h1 style="color:blue; text-decoration: blink;>This is a Blue Heading</h1>`
+```
 
 Style attributes can set almost anything - background, border, font, margins, transparency, etc.
 
@@ -137,7 +139,7 @@ But what if we want every occurance of an element to have the same style? Add it
 
 +++
 
-### HTML: Classes and Identifiers
+### Classes and Identifiers
 
 ```
 <style>
@@ -147,23 +149,22 @@ But what if we want every occurance of an element to have the same style? Add it
   .nameStyling {  font-family: Times New Roman, serif; 
         font-size: 18pt; color: #0000FF; }
   #secondItemName {  color: red; }
-</style>...8
+</style>...
 <ol>
   <li>1st list item, with a <span class="nameStyling">Name</span></li>
   <li>2nd list item, with a 
   <span class="nameStyling" id="secondItemName">Unique Name</span></li>
 </ol>
 ```
-@[2-4,11-13](Defining style by tag)
-@[5-6,11-13](Defining style by class)
-@[7,12](Defining style by id. Note combined class and id use)
-@[2-7](Note different ways of defining font, size and color)
+@[2-4,10-12](Defining style by tag)
+@[5-6,10-12](Defining style by class)
+@[7,12](Defining style by id. Note combined class and id use.)
+@[2-7](Note different ways of defining font, size and color.)
+@[2-13](See result at [this CodePen](https://codepen.io/accack/pen/wPLwaz?editors=1000#))
 
-See result at [this CodePen](https://codepen.io/accack/pen/wPLwaz?editors=1000#)
++++
 
----
-
-### HTML: Using Other Files
+### Linking to other files
 
 What if we want to share styles between pages, or even sites? Or if we just want to break things up to make them more manageable?
 ```
@@ -211,18 +212,18 @@ The Elements tab provides lots of great HTML & CSS stuff.
 ---
 
 HTML & CSS - Useful tools & Concepts
-### #2: An Introduction to Chrome DevTools (Console & JQuery)
+### #2: An Introduction to Chrome DevTools (Console)
 
 The Console tab/window in DevTool:
 
 1. Displays details of any problems when loading the page
-2. Allows you to query the page (and run commands against it), using something called "JQuery".
+2. Allows you to query the page (and run commands against it), using JavaScript and "JQuery".
 
 +++
 
 ### Exercise
 
-* With your page loaded, open the DevTools Console, and type in `$('head')`.
+* With your page loaded, open the DevTools Console, and type in `document.getElementByTag('head')`
 * Experiment with other elements on the page.
 
 ---
@@ -231,4 +232,41 @@ The Console tab/window in DevTool:
 ### Introduction to JS (Behaviour)
 
 +++
+
+### JavaScript is not the same as Java!
+
+Any more than Ham is the same as Hamburger.
+
+* Simple scripting language.
+* Primary use is front-end functionality, but increasingly being used for back-end.
+* Note: `document.getElementByTag('head')` in the previous exercise was an example of JavaScript.
+
++++
+
+### A simple example
+
+```
+<html><body>
+
+<h2>My First JavaScript</h2>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+</body></html> 
+```
+@[1-11](Discuss)
+@[5-7](Button, with text 'Click me to display Date and Time.')
+@[6](`onclick` handler to run a piece of JS when button is clicked)
+@[6](Finds item with ID 'demo' in the DOM, and sets its 'innerHTML' to today's date.
+@[1-11](Click [here](https://www.w3schools.com/js/tryit.asp?filename=tryjs_myfirst) to try this.)
+
++++
+
+That's it for now!
+
+---
 
